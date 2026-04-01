@@ -13,9 +13,10 @@ export function add(numbers) {
   export function divide(numbers) {
     return numbers.slice(1).reduce((result, num) => {
       if (num === 0) {
-        console.log("Error: Division by zero");
+        console.log("Error : Division by zero");
         return NaN;
       }
-      return result / num;
+      return result/num;
+
     }, numbers[0]);
   }
